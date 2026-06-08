@@ -21,9 +21,9 @@ class BST:
     def rsearch(self,root,data):
         if root == None or root.item == data:
             return root 
-        if root.item<data:
+        if root.item>data:
             return self.rsearch(root.left,data)
-        elif root.item>data:
+        elif root.item<data:
             return self.rsearch(root.right,data)
     def inorder(self,root):
         result=[]
