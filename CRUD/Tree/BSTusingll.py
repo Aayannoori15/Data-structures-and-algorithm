@@ -52,4 +52,5 @@ class BST:
             result.append(root.item)
             self.rpostorder(root.left,result)
             self.rpostorder(root.right,result)
+    def deletion(self,root):
         
